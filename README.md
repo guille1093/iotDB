@@ -11,25 +11,36 @@ En el contexto de las aplicaciones de IoT, es fundamental contar con bases de da
 
 # Integración de Tecnologías:
 
+
 ## Sensor IoT: 
 Se implementará un sensor IoT emulado capaz de generar y enviar mediciones en tiempo real. Este sensor estará conectado a través de la red para comunicarse con la instancia de Telegraph. 
 
+
 ## Telegraph: 
 Se utilizarán dos instancias de Telegraph, una para recibir las mediciones enviadas por el sensor IoT y publicarlas en el broker MQTT. Otra instancia de telegraph que está suscrita al tópico correspondiente en el broker y envía las mediciones hacia la base de datos para su persistencia. Telegraph actuará como el intermediario para la transferencia de datos entre el sensor y la base de datos.
+
 https://www.influxdata.com/time-series-platform/telegraf/
+
 
 ## Broker MQTT: 
 EMQX se empleará como el broker MQTT para facilitar la comunicación bidireccional entre el sensor IoT y la instancia de Telegraph encargada de escribir los datos en InfluxDB. El broker MQTT garantiza la entrega confiable de mensajes en un entorno de IoT distribuido. Una de las ventajas de su utilización es que múltiples dispositivos pueden publicar o leer de los tópicos permitiendo una comunicación eficiente utilizando un patrón de diseño publicador / suscriptor en nuestra arquitectura.
+
 https://www.emqx.io/
+
 
 ## InfluxDB: 
 La base de datos InfluxDB se utilizará para almacenar y gestionar las mediciones provenientes del sensor IoT. Gracias a su estructura optimizada para datos de serie de tiempo, InfluxDB permite un almacenamiento eficiente y consultas ágiles sobre los datos capturados por el sensor.
+
 https://www.influxdata.com/
+
 
 ## Grafana: 
 Se empleará Grafana como herramienta de visualización para representar los datos almacenados en InfluxDB. Grafana permite crear paneles de control personalizados, gráficos interactivos y alertas basadas en los datos provenientes del sensor IoT.
+
 https://grafana.com/
+
 
 ## Docker Compose: 
 El entorno de Docker Compose se utilizará para orquestar y desplegar todas las tecnologías y componentes del sistema propuesto como servicios integrados dentro de una misma imagen. La utilización de contenedores facilita la replicación y escalabilidad del sistema en entornos de producción.
+
 https://docs.docker.com/compose/
