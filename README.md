@@ -10,7 +10,7 @@
   <p align="center">
     En la actualidad, el Internet de las cosas (IoT) ha experimentado un auge significativo, impulsando la necesidad de soluciones eficientes para recopilar, almacenar y analizar grandes volúmenes de datos generados por sensores distribuidos en diferentes entornos. En este trabajo de investigación, se propone la implementación de un sensor IoT que enviará sus mediciones a través de tecnologías de bases de datos optimizadas para aplicaciones de IoT. El flujo de datos se gestionará mediante una instancia de Telegraph que publicará las mediciones de nuestro sensor en un broker MQTT utilizando EMQX. Posteriormente, otra instancia de Telegraph suscrita al broker escribirá los datos en una base de datos de serie de tiempo InfluxDB. Por último, los datos se visualizarán utilizando Grafana, y todo el sistema se desplegará y orquestará en un entorno Docker Compose.
     <br />
-    <a href="https://github.com/guille1093/iotDB"><strong>Explore el proyecto»</strong></a>
+    <a href="https://github.com/guille1093/iotDB/blob/main/DOCS.pdf"><strong>Explore la documentación completa»</strong></a>
     <br />
     <br />
     <a href="https://github.com/guille1093/iotDB">Ver repo</a>
