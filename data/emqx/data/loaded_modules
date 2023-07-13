@@ -1,0 +1,8 @@
+{emqx_mod_delayed,false}.
+{emqx_mod_topic_metrics,true}.
+{emqx_mod_subscription,false}.
+{emqx_mod_acl_internal,true}.
+{emqx_mod_rewrite,false}.
+{emqx_mod_presence,true}.
+{emqx_mod_trace,true}.
+{emqx_mod_slow_subs,true}.
